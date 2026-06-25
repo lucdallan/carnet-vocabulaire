@@ -1,3 +1,5 @@
-git add nixpacks.toml
-git commit -m "Ajout de la configuration Nixpacks"
-git push origin main
+[phases.setup]
+nixPkgs = ["nodejs"]
+
+[start]
+cmd = "npx serve . -l 3000"
