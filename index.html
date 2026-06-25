@@ -8,7 +8,28 @@
 
 </head>
 <body>
+  <div class="carnet">
     <h1>Mon carnet de vocabulaire</h1>
-    <p>Enrichis ton vocabulaire chaque jour.</p>
+    <p>Enrichis ton vocabulaire chaque jour</p>
+
+    <div class="stats">
+      <p>Page actuelle : <span id="page-display">0</span></p>
+      <p>Mots appris : <span id="word-count">0</span></p>
+    </div>
+
+    <h2>Mettre à jour ma page</h2>
+    <input type="number" id="page-input" placeholder="Page atteinte">
+    <button id="page-save">Valider</button>
+
+    <h2>Ajouter un mot</h2>
+    <input type="text" id="word-input" placeholder="Le mot">
+    <input type="text" id="def-input" placeholder="Sa définition">
+    <button id="word-save">Ajouter</button>
+
+    <h2>Mes mots</h2>
+    <div id="word-list"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
