@@ -1,5 +1,0 @@
-[phases.setup]
-nixPkgs = ["nodejs"]
-
-[start]
-cmd = "npx serve . -l 3000"
